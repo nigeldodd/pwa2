@@ -12,7 +12,7 @@
   <div class="container">
      <h1 class="title">Current status<br>Patient list view 8</h1><br>
      <script>
-        var body = document.getElementsByTagName("body")[0];
+        var place = document.getElementsByTagName("body")[0];
         var ourTable     = document.createElement("table");
         var ourTableBody = document.createElement("tbody");
         for (var i = 0; i < 4; i++) {
@@ -26,7 +26,7 @@
           ourTableBody.appendChild(row);
         } 
         ourTable.appendChild(ourTableBody); 
-        body.appendChild(ourTable);
+        place.appendChild(ourTable);
         ourTable.setAttribute("border", "2");
       </script>
 
