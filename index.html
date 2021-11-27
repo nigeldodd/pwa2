@@ -9,10 +9,11 @@
   <meta name="theme-color" content="white"/>
 </head>
 <body class="fullscreen">
-  <div class="container">
-     <h1 class="title">Current status<br>Patient list view 10</h1><br>
+  <div class="container" id="con">
+     <h1 class="title">Current status<br>Patient list view 11</h1><br>
      <script>
-        var tablePlace = document.getElementsByTagName("body")[0];
+        //var tablePlace = document.getElementsByTagName("body")[0];
+        var tablePlace = document.getElementById("con");
         var ourTable     = document.createElement("table");
         var ourTableBody = document.createElement("tbody");
         for (var i = 0; i < 4; i++) {
