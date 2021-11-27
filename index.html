@@ -10,10 +10,28 @@ t<!doctype html>
 </head>
 <body class="fullscreen">
   <div class="container" id="con">
-    <p>clinical staging 5</p>
+    <p>clinical staging 6</p>
     <p id="demo"></p>
      <script>
-        var body = document.getElementsByTagName("body")[0];
+       
+var body = document.getElementsByTagName("body")[0];
+  var ourTable     = document.createElement("table");
+  var ourTableBody = document.createElement("tbody"); 
+  for (var i = 0; i < 4; i++) { 
+    var row = document.createElement("tr"); 
+    for (var j = 0; j <2; j++) { 
+      var cell = document.createElement("td");
+      var cellText = document.createTextNode("cell in row "+i+", column "+j);
+      cell.appendChild(cellText);
+      row.appendChild(cell);
+    }
+    ourTableBody.appendChild(row);
+  }
+  ourTable.appendChild(ourTableBody); 
+  body.appendChild(ourTable);
+  ourTable.setAttribute("border", "2");
+       */
+   /*     var body = document.getElementsByTagName("body")[0];
         //var body = document.getElementById("con");
         var ourTable     = document.createElement("table");
         var ourTableBody = document.createElement("tbody");
@@ -26,16 +44,17 @@ t<!doctype html>
             row.appendChild(cell);
           }
           ourTableBody.appendChild(row);
-        } 
+        } */
         //ourTable.appendChild(ourTableBody); 
         /*body.appendChild(ourTable);*/
         //document.getElementById("con").innerHTML=ourTable
         //document.getElementById("demo").innerHTML=ourTable
         //document.getElementById("con").innerHTML="hello"
         //document.getElementById('con').insertAdjacentHTML('beforeend', 'hello3');  //ok
-        body.appendChild(ourTable)
+        //body.appendChild(ourTable)
         //document.getElementById('con').insertAdjacentHTML('beforeend', ourTable);
-        ourTable.setAttribute("border", "2");
+        //ourTable.setAttribute("border", "2");
+        // see https://nigeldodd.github.io/pwa2/
       </script>
 
   </div>
