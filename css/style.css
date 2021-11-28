@@ -27,6 +27,7 @@ tr.borderbottom td{
   border-bottom: 3pt black;
 }
 
+td {background-color: aqua;}
 
 td.grn {
   background-color: green;
